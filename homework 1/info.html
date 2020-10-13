@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Curriculum Vitae</title>
+  <style>
+
+    body, html{
+      height: 100%;
+    }
+
+    body{
+        background-image: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:cover;
+      background-color: #282726;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    h1{
+      color: #A32C27;
+      text-align: center;
+    }
+
+    h3{
+      color: #733E0D;
+    }
+
+    p{
+      color: grey;
+    }
+
+    #mySidenavigation a{
+      position: absolute;
+      transition: 0.3s;
+      padding: 20px;
+      width: 200px;
+      text-decoration: none;
+      text-align: left;
+      font-size: 20px;
+      color:  #A32C27;
+      border-radius: 0 15px 15px 0;
+    }
+
+    #mySidenavigation a:hover {
+      left: 0;
+    }
+
+    #home {
+      top: 20px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }
+
+    #info {
+      top: 120px;
+      left: 0px;
+      background-color: #A9A9A9;
+    }
+
+    /*#courses {
+      top: 220px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }*/
+
+    #contact {
+      top: 220px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }
+
+    .card {
+      position: absolute;
+      top: 10%;
+      left: 17%;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+      box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 1);
+      max-width: 300px;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: #A9A9A9;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: #A32C27;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    .personal-information{
+      position: absolute;
+      top: 6%;
+      left: 50%;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+      box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 1);
+      max-width: 470px;
+      margin: auto;
+    }
+
+    .personal-information p{
+      text-align: left;
+      font-family: arial;
+      font-size: 20px;
+      color: #A9A9A9;
+      margin: 22px 20px 20px 20px;
+    }
+
+    .bottom-right {
+      position: fixed;
+      bottom: 3px;
+      right: 16px;
+    }
+
+    .glyphicon{
+      padding: 10px;
+      font-size: 20px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa {
+      padding: 10px;
+      font-size: 20px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 70px 70px 70px 70px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .fa-github {
+      background: #000000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .fa-twitter {
+  background: #55ACEE;
+  color: white;
+    }
+
+    .footer h4  {
+      text-align: center;
+      font-family: arial;
+      font-size: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="image">
+
+
+      <div id="mySidenavigation" class="sidenavigation">
+        <a href="index.html" id="home"><i class="fa fa-home" style="right: 1px;"></i> HOME</a>
+        <a href="info.html" id="info"><i class="glyphicon glyphicon-user" style="right: 1px;"></i> INFO</a>
+
+        <a href="contact.html" id="contact"><i class="glyphicon glyphicon-envelope" style="right: 1px;"></i> CONTACT</a>
+      </div>
+
+    <div class="card">
+      <img src="info.jpeg" alt="me" style="width:60%; margin-top:8px;">
+      <h1>Cleopatra Beka</h1>
+      <p class="title">Undergraduate Student</p>
+      <p>University of Thessaly</p>
+      <div style="margin: 24px 0;">
+        <a href="https://github.com/kbeka" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/cleo_beka" target="_blank"><i class="fa fa-facebook"></i></a>
+      </div>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+
+    <div class="personal-information">
+      <h1>Personal information</h1>
+      <p>My name is Cleopatra Beka.<br><br>
+         I am 23 years old and currently living in Volos City to study at the
+         departement of Electrical & Computer Engineering
+         <a href="https://www.e-ce.uth.gr/" target="_blank">@Uth</a>.<br><br>
+         Since my teen years I have worked at my mother's business at customer service.
+         This experience has enabled me to hone my managerial skills and
+         handle difficult situations with ease.<br><br>
+         Working in groups is were I perform best, since ideas from everyone bounce
+         back and forth in the team until they are perfected.<br><br>
+         For more information about the courses I've taken click "Read More...".<br>
+      </p>
+      <a href="courses.html"><button>Read More...</button></a>
+    </div>
+
+    <div class="bottom-right">
+      <a href="https://www.facebook.com/cleo.beka/" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.google.com" target="_blank" class="fa fa-google"></a>
+      <a href="https://github.com/kbeka" target="_blank" class="fa fa-github"></a>
+      <a href="https://www.instagram.com/cleo_beka/" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://twitter.com/cleobeka" target="_blank" class="fa fa-twitter"></a>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+</html>

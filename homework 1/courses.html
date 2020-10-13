@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Courses</title>
+    <style>
+
+    body{
+        background-image: url("bg1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size:cover;
+      background-color:#282726;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    #mySidenavigation a{
+      position: fixed;
+      transition: 0.3s;
+      padding: 20px;
+      width: 200px;
+      text-decoration: none;
+      text-align: left;
+      font-size: 20px;
+      color:  #A32C27;
+      border-radius: 0 15px 15px 0;
+    }
+
+    #mySidenavigation a:hover {
+      left: 0;
+    }
+
+    #home {
+      top: 20px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }
+
+    #info {
+      top: 120px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }
+
+    /*#courses {
+      top: 220px;
+      left: 0px;
+      background-color: #A9A9A9;
+    }*/
+
+    #contact {
+      top: 220px;
+      left: -170px;
+      background-color: #A9A9A9;
+    }
+
+    .bottom-right {
+      position: fixed;
+      bottom: 3px;
+      right: 16px;
+    }
+
+    .glyphicon{
+      padding: 10px;
+      font-size: 20px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa {
+      padding: 10px;
+      font-size: 20px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 70px 70px 70px 70px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .fa-github {
+      background: #000000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .fa-twitter {
+  background: #55ACEE;
+  color: white;
+    }
+
+    /* * {
+  box-sizing: border-box;
+} */
+/* for courses */
+.columns {
+  float: left;
+  width: 19%;
+  padding: 8px;
+}
+
+.courses {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.courses:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.courses .header {
+  background-color: rgba(10,10,10, 0.9);
+  color: white;
+  font-size: 25px;
+}
+
+.courses li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.courses .grey {
+  background-color: rgba(218, 215, 215,0.9);
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+    </style>
+  </head>
+
+	<body>
+
+        <div id="mySidenavigation" class="sidenavigation">
+          <a href="index.html" id="home"><i class="fa fa-home" style="right: 1px;"></i> HOME</a>
+          <a href="info.html" id="info"><i class="glyphicon glyphicon-user" style="right: 1px;"></i> INFO</a>
+
+          <a href="contact.html" id="contact"><i class="glyphicon glyphicon-envelope" style="right: 1px;"></i> CONTACT</a>
+        </div>
+
+
+    <div style="margin-left:15%;padding:1px 16px;height:900px;">
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">1st Semester</li>
+          <li class="grey">Calculus I</li>
+          <li class="grey">Digital Design</li>
+          <li class="grey">Linear Algebra</li>
+          <li class="grey">Physics I</li>
+          <li class="grey">Programming I</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">2nd Semester</li>
+          <li class="grey">Calculus II</li>
+          <li class="grey">Discrete Mathematics</li>
+          <li class="grey">Engineering Drawing</li>
+          <li class="grey">Physics II</li>
+          <li class="grey">Programming II</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">3rd Semester</li>
+          <li class="grey">Circuit Analysis</li>
+          <li class="grey">Computer Organization & Design</li>
+          <li class="grey">Data Structures</li>
+          <li class="grey">Electrical Measures</li>
+          <li class="grey">Probability & Statistics</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">4th Semester</li>
+          <li class="grey">Algorithms</li>
+          <li class="grey">Differential Equations</li>
+          <li class="grey">Intro to Electronics</li>
+          <li class="grey">Numerical Analysis</li>
+          <li class="grey">Signals and Systems</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">5th Semester</li>
+          <li class="grey">Auto-Control Systems</li>
+          <li class="grey">Computer Networks I</li>
+          <li class="grey">Database Systems I</li>
+          <li class="grey">Artificial Intelligence</li>
+          <li class="grey">Education Technologies</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">6th Semester</li>
+          <li class="grey">Applied Thermodynamics</li>
+          <li class="grey">Electromagnetic Fields I</li>
+          <li class="grey">Power Systems I</li>
+          <li class="grey">System Modeling and Performance</li>
+          <li class="grey">Telecomunication Systems</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">7th Semester</li>
+          <li class="grey">Big Data Mining</li>
+          <li class="grey">Computer Algebra I</li>
+          <li class="grey">Logic and Functional Programming</li>
+          <li class="grey">Problem Solving Environments and Applications in Data Science</li>
+          <li class="grey">WWW Technologies</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">8th Semester</li>
+          <li class="grey">Data Mining</li>
+          <li class="grey">Multiagent Systems</li>
+          <li class="grey">Object Oriented Programming</li>
+        </ul>
+      </div>
+
+      <div class="columns">
+        <ul class="courses">
+          <li class="header">9th Semester</li>
+          <li class="grey">Neuro-Fuzzy Computing</li>
+          <li class="grey">Statistics</li>
+        </ul>
+      </div>
+
+      <div class="bottom-right">
+        <a href="https://www.facebook.com/cleo.beka/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.google.com" target="_blank" class="fa fa-google"></a>
+        <a href="https://github.com/kbeka" target="_blank" class="fa fa-github"></a>
+        <a href="https://www.instagram.com/cleo_beka/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/cleobeka" target="_blank" class="fa fa-twitter"></a>
+      </div>
+
+    </div>
+
+	</body>
+</html>
